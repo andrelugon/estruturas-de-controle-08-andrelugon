@@ -20,8 +20,10 @@ jobs:
         test-name: Caso 1
         setup-command: ''
         command: python calcula_peso_ideal.py
-        input: 1.75 F
-        expected-output: '64.98'
+        input: |-
+          1.75
+          F
+        expected-output: '63.97'
         comparison-method: contains
         timeout: 5
     - name: Caso 2
@@ -31,7 +33,9 @@ jobs:
         test-name: Caso 2
         setup-command: ''
         command: python calcula_peso_ideal.py
-        input: 1.90 M
+        input: |-
+          1.90
+          M
         expected-output: '80.13'
         comparison-method: contains
         timeout: 5
@@ -42,7 +46,9 @@ jobs:
         test-name: Caso 3
         setup-command: ''
         command: python calcula_peso_ideal.py
-        input: 1.90 F
+        input: |-
+          1.90
+          F
         expected-output: '73.29'
         comparison-method: contains
         timeout: 5
